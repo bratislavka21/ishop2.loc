@@ -14,6 +14,7 @@ class App
         session_start();
         self::$app = Registry::getInstance();
         $this->getProperties();
+        new ErrorHandler();
     }
 
     protected function getProperties()
